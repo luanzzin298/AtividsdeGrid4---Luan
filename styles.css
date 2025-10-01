@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 800px;
+  background: #f0f0f5;
+  font-family: Arial, sans-serif;
+}
+.container {
+  display: grid;
+  width: 800px;  
+  height: 600px; 
+  grid-template-columns: 1.6fr 1.6fr 1.6fr 1.6fr 1.6fr;
+  grid-template-rows: 1fr 1fr 0.8fr 1fr;
+  gap: 7px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "area1 area1 area2 area2 area2"
+    "area1 area1 area3 area3 area3"
+    "area4 area4 area4 area4 area4"
+    "area5 area6 area7 area8 area9";
+}
+.container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+.area1 { grid-area: area1; background: #ff4d88; }
+.area2 { grid-area: area2; background: #3399ff; }
+.area3 { grid-area: area3; background: #ff80bf; }
+.area4 { grid-area: area4; background: #66b3ff; }
+.area5 { grid-area: area5; background: #ff99cc; }
+.area6 { grid-area: area6; background: #4da6ff; }
+.area7 { grid-area: area7; background: #ff66a3; }
+.area8 { grid-area: area8; background: #1a75ff; }
+.area9 { grid-area: area9; background: #e60073; }
